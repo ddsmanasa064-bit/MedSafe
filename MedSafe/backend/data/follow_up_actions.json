@@ -1,0 +1,41 @@
+[
+  {
+    "id": "flw-1",
+    "patientId": "PAT10001",
+    "medicationId": "med-3",
+    "medicationName": "Metformin 500 mg",
+    "reason": "2 missed doses and 1 late dose recorded during the past 7 days.",
+    "actionRequired": "Review medication timing with healthcare provider during next checkup.",
+    "status": "PENDING",
+    "recommendedForRole": "DOCTOR",
+    "notes": "Patient reports mild afternoon gastrointestinal discomfort when taking with lunch.",
+    "createdAt": "2026-09-09"
+  },
+  {
+    "id": "flw-2",
+    "patientId": "PAT10001",
+    "medicationId": "med-4",
+    "medicationName": "Atorvastatin 20 mg",
+    "reason": "Prescription nearing end of 30-day course with zero refills remaining.",
+    "actionRequired": "Submit renewal request to Dr. Ravi Kumar.",
+    "status": "IN_REVIEW",
+    "recommendedForRole": "PHARMACIST",
+    "createdAt": "2026-09-10"
+  },
+  {
+    "id": "flw-refill-a663ad9f",
+    "patientId": "PAT10001",
+    "medicationId": "med-0e8c4f6c",
+    "medicationName": "Amlodipine Besylate",
+    "type": "REFILL_REQUIRED",
+    "doctorId": "DOC10001",
+    "doctorName": "Dr. Ravi Kumar",
+    "reason": "Refill #RFL82333 requested for Amlodipine Besylate (30 doses).",
+    "actionRequired": "Pharmacy dispensing clearance or clinician prescription renewal review.",
+    "status": "COMPLETED",
+    "recommendedForRole": "PHARMACIST",
+    "notes": "Resolved by Refill #RFL82333 completion.",
+    "createdAt": "2026-09-10T19:26:53.896Z",
+    "resolvedAt": "2026-09-10T19:26:53.919Z"
+  }
+]

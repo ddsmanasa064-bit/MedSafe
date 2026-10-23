@@ -1,0 +1,742 @@
+[
+  {
+    "id": "aud-1",
+    "userId": "usr-doc-1",
+    "userName": "Dr. Ravi Kumar",
+    "userRole": "DOCTOR",
+    "action": "PRESCRIPTION_CREATED",
+    "resource": "Prescription",
+    "resourceId": "RX10001",
+    "patientId": "PAT10001",
+    "timestamp": "2026-08-11T10:15:00Z",
+    "details": {
+      "doctorId": "DOC10001",
+      "medications": [
+        "med-1",
+        "med-2",
+        "med-3"
+      ]
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-2",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "CAREGIVER_AUTHORIZED",
+    "resource": "Consent",
+    "resourceId": "con-1",
+    "patientId": "PAT10001",
+    "timestamp": "2026-07-27T14:20:00Z",
+    "details": {
+      "granteeId": "usr-car-1",
+      "scope": "SCHEDULE_ADHERENCE"
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-3",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "DOSE_MARKED_TAKEN",
+    "resource": "MedicationSchedule",
+    "resourceId": "sch-today-1",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T09:06:12Z",
+    "details": {
+      "scheduledTime": "09:00",
+      "status": "ON_TIME"
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-5c42f9dd",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "CONSULTATION_REQUEST_SUBMITTED",
+    "resource": "ConsultationRequest",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:39.749Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/consultations/request",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-f5eac2a8",
+    "userId": "usr-rec-1",
+    "userName": "Priya Sharma",
+    "userRole": "RECEPTIONIST",
+    "action": "PATIENT_REQUEST_ACCEPTED",
+    "resource": "ConsultationRequest:cr-f9c3b0dd",
+    "details": {
+      "requestId": "cr-f9c3b0dd",
+      "patientId": "PAT10001",
+      "doctorId": "DOC10001",
+      "hospitalId": "HOSP-00125",
+      "receptionistId": "REC-0018"
+    },
+    "result": "SUCCESS",
+    "timestamp": "2026-09-10T19:26:39.759Z"
+  },
+  {
+    "id": "aud-eaf163f3",
+    "userId": "usr-rec-1",
+    "userName": "Priya Sharma",
+    "userRole": "RECEPTIONIST",
+    "action": "RECEPTIONIST_REQUEST_RESPONDED",
+    "resource": "ConsultationRequest",
+    "resourceId": "cr-f9c3b0dd",
+    "timestamp": "2026-09-10T19:26:39.772Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "PUT",
+      "path": "/api/receptionist/requests/cr-f9c3b0dd/respond",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-3ba8860f",
+    "userId": "usr-rec-1",
+    "userName": "Priya Sharma",
+    "userRole": "RECEPTIONIST",
+    "action": "RECEPTIONIST_PATIENT_LINKED",
+    "resource": "Patient:PAT10002",
+    "details": {
+      "patientId": "PAT10002",
+      "hospitalId": "HOSP-00125",
+      "receptionistId": "REC-0018"
+    },
+    "result": "SUCCESS",
+    "timestamp": "2026-09-10T19:26:39.783Z"
+  },
+  {
+    "id": "aud-38b9a974",
+    "userId": "usr-rec-1",
+    "userName": "Priya Sharma",
+    "userRole": "RECEPTIONIST",
+    "action": "RECEPTIONIST_PATIENT_LINKED",
+    "resource": "PatientHospitalRelationship",
+    "patientId": "PAT10002",
+    "timestamp": "2026-09-10T19:26:39.789Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/receptionist/patients/link",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-8ceb65a2",
+    "userId": "usr-rec-1",
+    "userName": "Priya Sharma",
+    "userRole": "RECEPTIONIST",
+    "action": "REPORT_VIEWED_RECEPTIONIST",
+    "resource": "MedicalReport:RPT10001",
+    "details": {
+      "reportId": "RPT10001",
+      "patientId": "PAT10001",
+      "hospitalId": "HOSP-00125"
+    },
+    "result": "SUCCESS",
+    "timestamp": "2026-09-10T19:26:39.799Z"
+  },
+  {
+    "id": "aud-d8197783",
+    "userId": "usr-rec-1",
+    "userName": "Priya Sharma",
+    "userRole": "RECEPTIONIST",
+    "action": "REPORT_VIEWED_RECEPTIONIST",
+    "resource": "MedicalReport",
+    "resourceId": "rpt-1",
+    "timestamp": "2026-09-10T19:26:39.801Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "GET",
+      "path": "/api/receptionist/reports/rpt-1",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-59d9e41a",
+    "userId": "usr-rec-2",
+    "userName": "Anil Verma",
+    "userRole": "RECEPTIONIST",
+    "action": "REPORT_VIEWED_RECEPTIONIST",
+    "resource": "MedicalReport",
+    "resourceId": "rpt-1",
+    "timestamp": "2026-09-10T19:26:39.805Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "GET",
+      "path": "/api/receptionist/reports/rpt-1",
+      "query": {},
+      "statusCode": 403
+    },
+    "result": "FAILURE"
+  },
+  {
+    "id": "aud-14c79b43",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.308Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-838792f7",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.329Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-66adca38",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.332Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-3759d300",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.348Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-ad183fd5",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.355Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-386fd32d",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.370Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-00e789d9",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.373Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-fcf708a4",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.384Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-a6941e71",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.387Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-ec019a5b",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.397Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-cac493e4",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:44.422Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-91dd7e59",
+    "userId": "usr-doc-1",
+    "userName": "Dr. Ravi Kumar",
+    "userRole": "DOCTOR",
+    "action": "PRESCRIPTION_ISSUED",
+    "resource": "Prescription",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:26:53.879Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/prescriptions",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-4d0fe70a",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:28:40.716Z",
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-4ed557e5",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:29:05.007Z",
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-eef868b2",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:29:08.433Z",
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-db92cf8b",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:30:05.528Z",
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-1038bbd4",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:34:10.018Z",
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-74971fb5",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.620Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-8cb9ba21",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.641Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-c3d10f7f",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.645Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-0be9b9dc",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.663Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-8e87db30",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.669Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-f9ddcb1b",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.683Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-dd112ca9",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.686Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-d226b42d",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.699Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-647222f6",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.703Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/create-order",
+      "query": {},
+      "statusCode": 201
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-ddcba28a",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.713Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-8b23fc30",
+    "userId": "usr-pat-1",
+    "userName": "Anjali Sharma",
+    "userRole": "PATIENT",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "patientId": "PAT10001",
+    "timestamp": "2026-09-10T19:42:37.738Z",
+    "ipAddress": "::1",
+    "details": {
+      "method": "POST",
+      "path": "/api/payments/razorpay/verify-payment",
+      "query": {},
+      "statusCode": 200
+    },
+    "result": "SUCCESS"
+  },
+  {
+    "id": "aud-1792740967869",
+    "action": "USER_LOGIN",
+    "resource": "User",
+    "resourceId": "usr-pat-1",
+    "userId": "usr-pat-1",
+    "userRole": "PATIENT",
+    "patientId": "PAT10001",
+    "timestamp": "2026-10-23T07:36:07.869646+00:00",
+    "result": "SUCCESS",
+    "details": {}
+  },
+  {
+    "id": "aud-1792740967874",
+    "action": "RAZORPAY_ORDER_CREATED",
+    "resource": "Payment",
+    "resourceId": "order_1792740967874",
+    "userId": "usr-pat-1",
+    "userRole": "PATIENT",
+    "patientId": "PAT10001",
+    "timestamp": "2026-10-23T07:36:07.874643+00:00",
+    "result": "SUCCESS",
+    "details": {
+      "billId": "BIL10001",
+      "amount": 473
+    }
+  },
+  {
+    "id": "aud-1792740967890",
+    "action": "RAZORPAY_PAYMENT_VERIFIED",
+    "resource": "Payment",
+    "resourceId": "pay_test_123",
+    "userId": "usr-pat-1",
+    "userRole": "PATIENT",
+    "patientId": "PAT10001",
+    "timestamp": "2026-10-23T07:36:07.890744+00:00",
+    "result": "SUCCESS",
+    "details": {
+      "orderId": "order_1792740967874",
+      "signatureValid": true
+    }
+  }
+]

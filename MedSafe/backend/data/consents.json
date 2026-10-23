@@ -1,0 +1,35 @@
+[
+  {
+    "id": "con-1",
+    "patientId": "PAT10001",
+    "granteeId": "usr-car-1",
+    "granteeName": "Priya Sharma (Daughter)",
+    "granteeEmail": "priya@medsafe.local",
+    "granteeRole": "CAREGIVER",
+    "accessScope": "SCHEDULE_ADHERENCE",
+    "status": "ACTIVE",
+    "grantedAt": "2026-07-27"
+  },
+  {
+    "id": "con-2",
+    "patientId": "PAT10001",
+    "granteeId": "usr-doc-1",
+    "granteeName": "Dr. Ravi Kumar, MD",
+    "granteeEmail": "dr.ravi@medsafe.local",
+    "granteeRole": "DOCTOR",
+    "accessScope": "ALL",
+    "status": "ACTIVE",
+    "grantedAt": "2026-07-12"
+  },
+  {
+    "id": "con-60566b6a",
+    "patientId": "PAT10001",
+    "granteeId": "usr-doc-1",
+    "granteeName": "Dr. Ravi Kumar, MD",
+    "granteeEmail": "dr.ravi@medsafe.local",
+    "granteeRole": "DOCTOR",
+    "accessScope": "ALL",
+    "status": "ACTIVE",
+    "grantedAt": "2026-09-10T19:26:39.759Z"
+  }
+]

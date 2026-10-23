@@ -1,0 +1,42 @@
+[
+  {
+    "id": "usr-pat-1",
+    "name": "Anjali Sharma",
+    "email": "anjali.sharma@medsafe.local",
+    "password": "Password123!",
+    "role": "PATIENT",
+    "patientId": "PAT10001",
+    "phone": "+91 98765 43210",
+    "createdAt": "2026-08-01T10:00:00Z"
+  },
+  {
+    "id": "usr-doc-1",
+    "name": "Dr. Ravi Kumar, MD",
+    "email": "dr.ravi@medsafe.local",
+    "password": "Password123!",
+    "role": "DOCTOR",
+    "doctorId": "DOC10001",
+    "phone": "+91 91234 56780",
+    "createdAt": "2026-08-01T10:00:00Z"
+  },
+  {
+    "id": "usr-rec-1",
+    "name": "Priya Verma",
+    "email": "receptionist.priya@medsafe.local",
+    "password": "Password123!",
+    "role": "RECEPTIONIST",
+    "clinicId": "clin-1",
+    "phone": "+91 94567 89012",
+    "createdAt": "2026-08-01T10:00:00Z"
+  },
+  {
+    "id": "usr-car-1",
+    "name": "Ramesh Sharma",
+    "email": "caregiver.ramesh@medsafe.local",
+    "password": "Password123!",
+    "role": "CAREGIVER",
+    "caregiverId": "CAR10001",
+    "phone": "+91 97890 12345",
+    "createdAt": "2026-08-01T10:00:00Z"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lab-1",
+    "labId": "LAB10001",
+    "userId": "usr-lab-1",
+    "name": "Apex Diagnostic Center & Imaging",
+    "email": "lab@medsafe.local",
+    "phone": "+91 94567 89012",
+    "address": "Diagnostic Tower, Block C, Jubilee Hills, Hyderabad",
+    "licenseNumber": "NABL-MED-9941",
+    "testCapabilities": [
+      "CBC Blood Test (Complete Blood Count)",
+      "Chest X-Ray (PA View)",
+      "Lipid Profile (Cholesterol & Triglycerides)",
+      "12-Lead Electrocardiogram (ECG)",
+      "HbA1c (Glycated Hemoglobin)",
+      "Liver Function Test (LFT)",
+      "Kidney Function Test (KFT/RFT)",
+      "Thyroid Stimulating Hormone (TSH)",
+      "Ultrasound Abdomen & Pelvis",
+      "Urine Routine & Microscopic"
+    ],
+    "verificationStatus": "VERIFIED",
+    "organizationId": "org-1"
+  }
+]

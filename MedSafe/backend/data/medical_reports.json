@@ -1,0 +1,25 @@
+[
+  {
+    "id": "rpt-1",
+    "reportId": "RPT10001",
+    "testOrderId": "TST10001",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "doctorId": "DOC10001",
+    "doctorName": "Dr. Ravi Kumar, MD",
+    "labId": "LAB10001",
+    "labName": "Apex Diagnostic Center & Imaging",
+    "testName": "CBC Blood Test (Complete Blood Count)",
+    "testDate": "2026-09-02",
+    "resultSummary": "Hemoglobin slightly low (11.2 g/dL), WBC and Platelet counts within normal physiological reference range.",
+    "detailedFindings": "Hemoglobin: 11.2 g/dL (Ref: 12.0 - 15.5 g/dL)\nRBC Count: 4.1 mil/uL (Ref: 4.0 - 5.2 mil/uL)\nTotal Leucocyte Count (TLC): 6,800 /uL (Ref: 4,000 - 11,000 /uL)\nPlatelet Count: 245,000 /uL (Ref: 150,000 - 450,000 /uL)\nPCV: 35.2%\nMCV: 82 fL\nMCH: 27 pg\nMCHC: 32%\nPeripheral Smear: Normocytic normochromic with mild microcytosis. No abnormal blast cells seen.",
+    "referenceRange": "Female Standard Reference Ranges (NABL Protocol)",
+    "status": "FINAL",
+    "performedBy": "K. Sunand, Senior Medical Lab Technologist",
+    "verifiedBy": "Dr. R. K. Sharma, MD (Pathology)",
+    "fileName": "CBC_Report_PAT10001.pdf",
+    "fileType": "application/pdf",
+    "uploadedAt": "2026-09-02T16:45:00Z",
+    "disclaimer": "CLINICAL NOTICE: This diagnostic report is strictly for licensed medical review and clinical interpretation. MedSafe does not provide automated diagnosis."
+  }
+]

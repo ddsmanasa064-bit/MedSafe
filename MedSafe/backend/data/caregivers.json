@@ -1,0 +1,14 @@
+[
+  {
+    "id": "car-1",
+    "caregiverId": "CAR10001",
+    "userId": "usr-car-1",
+    "name": "Priya Sharma",
+    "email": "priya@medsafe.local",
+    "phone": "+91 98765 11223",
+    "relationship": "Daughter / Family Caregiver",
+    "authorizedPatientIds": [
+      "PAT10001"
+    ]
+  }
+]

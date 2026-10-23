@@ -1,0 +1,16 @@
+[
+  {
+    "id": "clin-1",
+    "organizationId": "org-1",
+    "name": "Apollo Internal Medicine Wing",
+    "location": "Floor 2, Block A",
+    "phone": "+91 40 2360 7710"
+  },
+  {
+    "id": "clin-2",
+    "organizationId": "org-2",
+    "name": "Care Clinic Neurology & Family Medicine",
+    "location": "Main Tower, Floor 1",
+    "phone": "+91 40 4455 6680"
+  }
+]

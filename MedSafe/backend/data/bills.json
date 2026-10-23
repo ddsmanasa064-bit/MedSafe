@@ -1,0 +1,96 @@
+[
+  {
+    "id": "bil-1",
+    "billId": "BIL10001",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "clinicId": "clin-1",
+    "clinicName": "Apollo Internal Medicine Wing",
+    "labId": "LAB10001",
+    "labName": "Apex Diagnostic Center & Imaging",
+    "doctorId": "DOC10001",
+    "doctorName": "Dr. Ravi Kumar, MD",
+    "items": [
+      {
+        "description": "CBC Blood Test (Complete Blood Count) - Routine Investigation",
+        "quantity": 1,
+        "unitPrice": 450,
+        "totalPrice": 450,
+        "itemType": "TEST",
+        "referenceId": "TST10001"
+      }
+    ],
+    "subtotal": 450,
+    "tax": 23,
+    "discount": 0,
+    "totalAmount": 473,
+    "status": "PAID",
+    "billDate": "2026-08-31",
+    "dueDate": "2026-09-07",
+    "paidAt": "2026-10-23T07:36:07.890744+00:00",
+    "paymentId": "pay_test_123",
+    "paymentMethod": "RAZORPAY"
+  },
+  {
+    "id": "bil-2",
+    "billId": "BIL10002",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "clinicId": "clin-1",
+    "clinicName": "Apollo Internal Medicine Wing",
+    "labId": "LAB10001",
+    "labName": "Apex Diagnostic Center & Imaging",
+    "doctorId": "DOC10001",
+    "doctorName": "Dr. Ravi Kumar, MD",
+    "items": [
+      {
+        "description": "Chest X-Ray (PA View) - Diagnostic Radiology",
+        "quantity": 1,
+        "unitPrice": 750,
+        "totalPrice": 750,
+        "itemType": "TEST",
+        "referenceId": "TST10002"
+      }
+    ],
+    "subtotal": 750,
+    "tax": 38,
+    "discount": 0,
+    "totalAmount": 788,
+    "status": "PAID",
+    "billDate": "2026-09-08",
+    "dueDate": "2026-09-15",
+    "paidAt": "2026-09-10T19:42:37.671Z",
+    "paymentReference": "pay_test_1789069357669_bill"
+  },
+  {
+    "id": "bil-3",
+    "billId": "BIL10003",
+    "patientId": "PAT10001",
+    "patientName": "Anjali Sharma",
+    "clinicId": "clin-1",
+    "clinicName": "Apollo Internal Medicine Wing",
+    "labId": "LAB10001",
+    "labName": "Apex Diagnostic Center & Imaging",
+    "doctorId": "DOC10001",
+    "doctorName": "Dr. Ravi Kumar, MD",
+    "items": [
+      {
+        "description": "Lipid Profile (Cholesterol & Triglycerides) - Blood Pathology",
+        "quantity": 1,
+        "unitPrice": 650,
+        "totalPrice": 650,
+        "itemType": "TEST",
+        "referenceId": "TST10003"
+      }
+    ],
+    "subtotal": 650,
+    "tax": 33,
+    "discount": 0,
+    "totalAmount": 683,
+    "status": "PAID",
+    "billDate": "2026-09-09",
+    "dueDate": "2026-09-16",
+    "paidAt": "2026-09-10T19:26:44.358Z",
+    "paymentReference": "pay_test_1789068404355_bill"
+  }
+]

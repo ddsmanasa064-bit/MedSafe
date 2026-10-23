@@ -1,0 +1,44 @@
+[
+  {
+    "id": "med-1",
+    "medicationId": "MED10001",
+    "patientId": "PAT10001",
+    "name": "Paracetamol 500 mg",
+    "dosage": "500 mg",
+    "frequency": "Once Daily (Morning)",
+    "prescribedBy": "DOC10001",
+    "prescribedByName": "Dr. Ravi Kumar, MD",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-30",
+    "instructions": "Take after breakfast with a full glass of water",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "med-3",
+    "medicationId": "MED10003",
+    "patientId": "PAT10001",
+    "name": "Metformin 500 mg",
+    "dosage": "500 mg",
+    "frequency": "Twice Daily (Post-Lunch & Dinner)",
+    "prescribedBy": "DOC10001",
+    "prescribedByName": "Dr. Ravi Kumar, MD",
+    "startDate": "2026-08-15",
+    "endDate": "2026-11-15",
+    "instructions": "Take with meals to minimize gastrointestinal discomfort",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "med-2",
+    "medicationId": "MED10002",
+    "patientId": "PAT10001",
+    "name": "Atorvastatin 10 mg",
+    "dosage": "10 mg",
+    "frequency": "Once Daily (Bedtime)",
+    "prescribedBy": "DOC10001",
+    "prescribedByName": "Dr. Ravi Kumar, MD",
+    "startDate": "2026-08-01",
+    "endDate": "2026-12-31",
+    "instructions": "Take before sleeping",
+    "status": "ACTIVE"
+  }
+]

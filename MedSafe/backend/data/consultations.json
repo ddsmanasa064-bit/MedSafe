@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cns-7f491f60",
+    "consultationRequestId": "cr-f9c3b0dd",
+    "patientId": "PAT10001",
+    "doctorId": "DOC10001",
+    "clinicId": "clin-1",
+    "consultationDate": "2026-09-10",
+    "status": "SCHEDULED",
+    "createdAt": "2026-09-10T19:26:39.759Z"
+  }
+]

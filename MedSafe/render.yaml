@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: medsafe-platform
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GRACE_PERIOD_MINUTES
+        value: "30"
+      - key: REMINDER_INTERVAL_SECONDS
+        value: "15"
+      - key: RAZORPAY_MODE
+        value: TEST
+      - key: RAZORPAY_TEST_KEY_ID
+        value: rzp_test_MedSafeDemoKey123
+      - key: RAZORPAY_TEST_KEY_SECRET
+        value: MedSafeSecretKey2026TestMode
+      - key: RAZORPAY_WEBHOOK_SECRET
+        value: MedSafeWebhookSecret2026
+      - key: RAZORPAY_AUTO_CAPTURE
+        value: "true"

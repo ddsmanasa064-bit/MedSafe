@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dpr-1",
+    "relationshipId": "REL-DOC-10001",
+    "patientId": "PAT10001",
+    "doctorId": "DOC10001",
+    "doctorName": "Dr. Ravi Kumar, MD",
+    "hospitalId": "HOSP-00125",
+    "hospitalName": "ABC Hospital",
+    "status": "ACTIVE",
+    "createdAt": "2026-07-12",
+    "acceptedBy": "REC-0018",
+    "acceptedByRole": "RECEPTIONIST",
+    "acceptedAt": "2026-07-12"
+  }
+]
